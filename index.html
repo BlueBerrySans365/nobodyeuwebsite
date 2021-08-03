@@ -36,7 +36,10 @@
           h4,
           h5,
           h6,
-          p,
+          p{
+              font-family: 'mainFont';
+          }
+
           #credits {
             color: #888888;
             font-family: 'mainFont';
@@ -70,6 +73,15 @@
             margin-right: auto;
             width: 35%;
           }
+          @keyframes animation1 {
+            0%,100% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 0;
+            }
+            }
           .rainbow_text_animated {
             background: linear-gradient(to right, #FF0000, #FF6400, #FFF000, #2EFF00, #00FFDC, #0008FF, #FF00FF);
             -webkit-background-clip: text;
@@ -84,7 +96,7 @@
     <img src="assets/images/rsz_logo_65.png" class="center"></a>
     <br>
     <br>
-    <h1>Now we're real!</h1>
+    <h1 align="center">Now we're real!</h1>
     <!-- <h1 align="center">{//[ ^ Nobody ^ ]\\}</h1>
     <p align="center">Credits:</p>
     <p align="center">Created by Thny Awec | Models by @piko2718</p> -->
